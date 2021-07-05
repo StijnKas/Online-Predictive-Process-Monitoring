@@ -1,0 +1,37 @@
+{
+    "BPIC_2017":{
+      "vartypes":{
+        "case_id_col":"case:concept:name",
+        "activity_col":"concept:name",
+        "timestamp_col":"time:timestamp"
+      },
+      "params": {
+        "converters": {"case:RequestedAmount": "float_or_none",
+                       "FirstWithdrawalAmount": "float_or_none",
+                       "NumberOfTerms": "float_or_none",
+                       "MonthlyCost": "float_or_none",
+                       "CreditScore": "float_or_none",
+                       "OfferedAmount": "float_or_none",
+                       "Accepted": "float_or_none",
+                       "Selected": "float_or_none",
+                       "OfferID": "str"},
+        "parse_dates": {"time:timestamp": "%Y-%m-%d %H:%M:%S"}
+        }
+    },
+    "BPIC_2012":{
+      "vartypes":{
+        "case_id_col":"case:concept:name",
+        "activity_col":"concept:name",
+        "timestamp_col":"time:timestamp"
+      },
+      "params": {
+        "converters": {"org:resource": "float_or_none",
+                       "lifecycle:transition": "float_or_none",
+                       "concept:name": "float_or_none",
+                       "case:concept:name": "float_or_none",
+                       "case:AMOUNT_REQ": "float_or_none"},
+        "parse_dates": {"time:timestamp": "%Y-%m-%d %H:%M:%S", 
+                        "case:REG_DATE": "%Y-%m-%d %H:%M:%S"}
+        }
+    }
+  }
