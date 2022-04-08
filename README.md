@@ -1,5 +1,7 @@
 # Online Predictive Process Monitoring
-An online Predictive Process Monitoring approach using [River](https://github.com/online-ml/river).
+An online Predictive Process Monitoring approach using [River](https://github.com/online-ml/river). 
+
+Part of the Streaming Analytics 4 Process Mining track at ICPM 2021: https://sa4pm.win.tue.nl/2021/wp-content/uploads/sites/3/2021/10/ICPM2021-paper_170_2.pdf. 
 
 ## Directory
 - *OPPM* contains the source functions and datasets for the pipeline
